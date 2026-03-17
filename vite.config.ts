@@ -25,6 +25,19 @@ export default defineConfig(({mode}) => {
       include: ['firebase/app', 'firebase/firestore', 'firebase/auth'],
     },
     build: {
+      outDir: 'dist',
+      minify: 'esbuild',
+      sourcemap: false,
+      chunkSizeWarningLimit: 2000,
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            'vendor-react': ['react', 'react-dom', 'react-router-dom'],
+            'vendor-firebase': ['firebase/app', 'firebase/firestore', 'firebase/auth'],
+            'vendor-ui': ['lucide-react', 'motion', 'recharts'],
+          },
+        },
+      },
       commonjsOptions: {
         include: [/firebase/, /node_modules/],
       },
