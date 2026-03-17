@@ -82,7 +82,7 @@ export default function App() {
       <Routes>
         <Route path="/adminahmed" element={<AdminRoute><AdminDashboard /></AdminRoute>} />
         <Route path="/:slug" element={<LandingPage />} />
-        <Route path="/" element={<div className="min-h-screen bg-white"></div>} />
+        <Route path="/" element={<Navigate to="/adminahmed" replace />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
