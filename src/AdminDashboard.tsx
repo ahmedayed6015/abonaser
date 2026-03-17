@@ -1,11 +1,9 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { collection, addDoc, getDocs, updateDoc, deleteDoc, doc, getDoc, setDoc, onSnapshot, query, orderBy } from 'firebase/firestore';
-import { db, auth } from './firebase';
+import { db, auth } from './firebase.ts';
 import { Plus, Trash2, Edit2, Settings as SettingsIcon, ExternalLink, Copy, Check, Eye, Globe, Smartphone, Layout, BarChart3, Shield, Zap, Search, X, AlertCircle, TrendingUp, Users, MousePointer2, Monitor, ChevronDown, LogOut } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, LineChart, Line } from 'recharts';
 import { motion, AnimatePresence } from 'motion/react';
-import { clsx, type ClassValue } from 'clsx';
-import { twMerge } from 'tailwind-merge';
 
 const COUNTRIES = [
   "Saudi Arabia", "United Arab Emirates", "Kuwait", "Qatar", "Bahrain", "Oman", 
@@ -26,6 +24,8 @@ const THEMES = [
   { name: 'وردي ناعم', bg: 'bg-slate-50', primary: 'from-pink-500 to-rose-400', secondary: 'pink-500', text: 'text-slate-800', isDark: false },
   { name: 'رمادي معدني', bg: 'bg-slate-100', primary: 'from-slate-500 to-slate-700', secondary: 'slate-600', text: 'text-slate-900', isDark: false }
 ];
+import { clsx, type ClassValue } from 'clsx';
+import { twMerge } from 'tailwind-merge';
 
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
